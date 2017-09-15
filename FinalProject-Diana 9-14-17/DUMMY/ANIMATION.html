@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- //********************************* This is the link to the css **********************************// -->
+
+<link rel="stylesheet" type="text/css" href="FinalProject.css">
+
+<!-- //********************************** This is the link to the font ********************************// -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link href="https://fonts.googleapis.com/css?family=Droid+Serif|Quicksand|Raleway" rel="stylesheet">
+
+	<title>Alchemy By Design</title>
+<style type="text/css">
+	
+	body{
+	margin: 0;
+	}
+
+	h1{
+		font-size: 50px;
+	}
+
+	.sec1{
+		height:auto;
+		width:100vw;
+
+	}
+	.main{
+		height: 600px;
+		width: 500px;
+		
+		/*background-size: cover;*/
+		background-position: center;
+		background-repeat: no-repeat;
+		/*background-color: orange;*/
+		margin: 30px;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	#pic{
+		background-image: url(images/brownstone.jpeg); 
+		position: absolute;
+
+	}
+
+	#quote{
+		height:300px;
+		width: 600px;
+		font-size: 35px;
+		font-family: 'Raleway', sans-serif;
+		text-align: left;
+		color: #6B5350;
+		font-style: italic;
+		margin-top: 200px;
+		position: absolute;
+
+	}
+
+	footer{
+		position: relative;
+		bottom: 0;
+	}
+
+	a{
+		text-decoration: none;
+		color: #F5F0F0;
+	}
+
+	</style>
+
+</head>
+
+<body onload=" MovePic(), MoveQuote()">
+
+	<section id="container">
+
+		<div id="navDiv">
+
+			<nav> 
+				<ul>
+					<li><a href="index-FinalProject.html">Home</a></li>
+			        <li><a href="Bio.html">About</a></li>
+			        <li><a href="Projects.html">Projects</a></li>
+			        <li><a href="Publications.html">Publications</a></li>
+			        <li><a href="Videos.html">Videos</a></li>
+			        <li><a href="Audio.html">Audio</a></li>
+			        <li><a href="Contact.html">Contact</a></li>
+
+			    </ul>
+			</nav>
+
+		</div>
+
+		<br>
+
+			<header>
+				<div id="header">
+
+				<br>
+				<br>
+				<br>
+				<h1>Alchemy by Design</h1>
+
+				</div>
+
+			</header>
+		
+		
+		<br>
+				<div class="sections" id="sec1">
+							
+						<div class="main" id="pic"></div>
+							
+						
+						<div class="main" id="quote">
+							
+							<p>
+							Providing upscale housing options to upwardly mobile Bronxites to combat local brain-drain, concentrated poverty, and promote community engagement.
+							</p>
+							
+						</div>
+							
+						
+				</div>
+	</section>        <!-- //this is the end of the container section// -->
+
+	<script type="text/javascript">
+// -------------------- This is coming from the right moving to the left ---------------//
+
+	function MoveQuote() {
+	       var A = document.getElementById("quote");
+	       var pos = 0;
+	       var id = setInterval(frame, 7);
+	       function frame () {
+	           if (pos == 250){
+	               clearInterval(id);
+
+	           } else {
+	               pos++;
+	               A.style.right = pos + 'px';
+	               // A.style.left = pos + 'px';
+	           }
+	       }
+
+	}
+
+// -------------------- This is coming from the left moving to the right ---------------//
+
+
+	function MovePic() {
+	       var B = document.getElementById("pic");
+	       var pos = -150;
+	       var id = setInterval(frame, 7);
+	       function frame () {
+	           if (pos == 100){
+	               clearInterval(id);
+
+	           } else {
+	               pos++;
+	               // B.style.top = pos + 'px';
+	               B.style.left = pos + 'px';
+	               // B.style.right = pos + 'px';
+	               // B.style.bottom = pos + 'px';
+	               
+	           }
+	       }
+
+	}
+
+	</script>
+
+
+	</body>
+
+
+	</html>

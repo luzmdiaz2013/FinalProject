@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+
+body{
+	margin: 0;
+	padding: 0;
+
+
+	}
+
+	h1{
+		font-size: 50px;
+	}
+
+	.sections{
+		
+		height: auto;
+		width: 100vw;
+		display: flex;
+		/*flex-direction: column;*/
+		background-color: yellow;
+	}
+
+	#header{
+		margin: 0;
+		padding: 0;
+	}
+
+	
+	#pub{
+		/*text-align: center;*/
+		font-family: 'Raleway', sans-serif;
+		color: #1C1211;
+	}
+
+	img{
+		margin: 50px;
+	}
+	.radio{
+		display: flex;
+		flex-direction: column; 
+		padding: 50px
+		
+	}
+	
+	.audio{
+		
+		margin: 50px;
+		flex:1;
+		flex-direction: column;
+		height: 300px;
+		width: 500px;
+		margin: 60px;
+		flex: 1;
+		font-family: 'Raleway', sans-serif;
+		color: #1C1211;
+		background-color: orange;
+		
+	}
+		
+
+
+	a{
+		text-decoration: none;
+		color: #F5F0F0;
+	}
+
+	h2{
+		font-family: 'Raleway', sans-serif;
+		font-size: 30px;
+		color: #1C1211;
+		/*color: #6B5350;*/
+	}
+
+	footer{
+		position: relative;
+		bottom: 0;
+	}
+/*************************** Modal from Class  ******************/
+	
+	.modalDialog {
+      position: fixed;
+      font-family: 'Raleway', sans-serif;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: none/*rgba(0,0,0,0.8)*/;
+      z-index: 99999;
+      opacity:0;
+      -webkit-transition: opacity 500ms ease-in;
+      -moz-transition: opacity 500ms ease-in;
+      transition: opacity 500ms ease-in;
+      pointer-events: none;
+      }
+
+      .modalDialog:target {
+        opacity:1;
+        pointer-events: auto;
+      }
+
+      .modalDialog > div {
+      width: 650px;
+      height: auto;
+      position: relative;
+      margin: 10% auto;
+      padding: 5px 20px 13px 20px;
+      border-radius: 10px;
+      background: #fff;
+      background: -moz-linear-gradient(#fff, #999);
+      background: -webkit-linear-gradient(#fff, #999);
+      background: -o-linear-gradient(#fff, #999);
+      }
+
+      .close {
+      background: #6B5350;
+      color: #FFFFFF;
+      line-height: 25px;
+      position: absolute;
+      right: -12px;
+      text-align: center;
+      top: -10px;
+      width: 24px;
+      text-decoration: none;
+      font-weight: bold;
+      -webkit-border-radius: 12px;
+      -moz-border-radius: 12px;
+      border-radius: 12px;
+      -moz-box-shadow: 1px 1px 3px #000;
+      -webkit-box-shadow: 1px 1px 3px #000;
+      box-shadow: 1px 1px 3px #000;
+      }
+
+.close:hover { background: #00d9ff; }
+
+</style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+	<!-- ****************************** This is the Audio parent div ******************************** -->
+	<div class="sections">
+
+
+<!-- ****************** Videos courtesy of      and Vimeo *************** -->
+
+			<center>
+			<div class="radio">
+				
+				
+				
+				
+				<h2 id="pub">Media Coverage - Radio </h2>
+				
+				<a href="#openModal"><img src="audio/NPR.jpg"></a>
+				
+                
+                <div id="openModal" class="modalDialog">
+
+	             	<div class="audio">NPR (2017) Public Health Minute with Bill Latimer, PhD MPH “Energy Insecurity”
+
+	                    <a href="#close" title="Close" class="close">X</a>
+	                    
+	                    <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/247357630&amp;color=ff5500"></iframe>
+
+	                </div>
+
+	                
+                </div>
+
+
+                <a href="#openModal2"><img src="audio/WNYC.png"></a>
+
+                <div id="openModal2" class="modalDialog">
+
+					<div class="audio">WNYC (NPR-NYC) (2016) “Returning to Mott Haven and the South Bronx”
+
+		                <a href="#close" title="Close" class="close">X</a>
+
+		                <iframe frameborder="0" scrolling="no" height="166" width="100%" src="https://www.wnyc.org/widgets/ondemand_player/wnyc/#file=/audio/json/684198/&share=1"></iframe>
+	                
+	                </div>
+
+	            </div>
+
+
+
+
+				
+
+			</div>
+			</center>
+	</div>
+
+</body>
+</html>
+
+
